@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Mobile Dropdown Toggle Logic
-  const dropdownIcons = document.querySelectorAll('.nav-links .dropdown-icon');
-  dropdownIcons.forEach(icon => {
-    icon.addEventListener('click', (e) => {
+  const dropdownTriggers = document.querySelectorAll('.nav-links .has-dropdown .dropdown-trigger, .nav-links .has-dropdown .dropdown-icon');
+  dropdownTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
       // Only apply toggle logic on mobile view
       if (window.innerWidth <= 768) {
         e.preventDefault();
         e.stopPropagation();
-        const parentDropdown = icon.closest('.has-dropdown');
+        const parentDropdown = trigger.closest('.has-dropdown');
         if (parentDropdown) {
           const menu = parentDropdown.querySelector('.dropdown-menu');
           const isOpening = !parentDropdown.classList.contains('mobile-dropdown-open');

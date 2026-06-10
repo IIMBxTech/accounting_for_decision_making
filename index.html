@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IIMBx MOOC on Accounting for Decision Making | 9 weeks | 3-4 hrs / week</title>
+    <link rel="canonical" href="https://iimbxtech.github.io/accounting_for_decision_making/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Lato:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500;1,8..60,600&display=swap" rel="stylesheet">
+    <style>
+      /* Critical CSS to prevent Flash of Unstyled Content (FOUC) */
+      body { margin: 0; background-color: #FFFFFF; }
+      #loader {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background-color: #FFFFFF;
+        z-index: 99999;
+        display: flex; justify-content: center; align-items: center;
+      }
+      .loader-content {
+        display: flex; flex-direction: column; align-items: center; gap: 32px;
+      }
+      .loader-logo { height: 60px; }
+      .progress-track {
+        width: 200px; height: 2px;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px; overflow: hidden;
+      }
+      .progress-line {
+        width: 0%; height: 100%; background: #C97138;
+      }
+    </style>
+    <script type="module" crossorigin src="/accounting_for_decision_making/assets/index-CoIPPvaP.js"></script>
+    <link rel="stylesheet" crossorigin href="/accounting_for_decision_making/assets/index-B0Qw5ebS.css">
+  </head>
+  <body>
+    <!-- Futuristic Cinematic Loader -->
+    <div id="loader">
+      <div class="loader-content">
+        <img src="./logo-animated-new.gif" alt="IIMBx Loading" class="loader-logo" />
+        <div class="progress-track">
+          <div class="progress-line"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="app">
+      <header class="main-header">
+        <div class="logo-container">
+          <a href="/">
+            <img src="./logo-animated-new.gif" alt="IIMBx Logo" class="logo" />
+          </a>
+        </div>
+        <nav class="nav-links">
+          <a href="https://iimbx.iimb.ac.in/" class="nav-item">Home</a>
+          
+          <div class="nav-item has-dropdown">
+            <a href="https://iimbx.iimb.ac.in/about/" class="dropdown-trigger" style="color: inherit; text-decoration: none;">About Us</a>
+            <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="#284a62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <ul class="dropdown-menu">
+              <li><a href="https://iimbx.iimb.ac.in/team/">Team</a></li>
+            </ul>
+          </div>
+          
+          <div class="nav-item has-dropdown">
+            <a href="https://iimbx.iimb.ac.in/programs/" class="dropdown-trigger" style="color: inherit; text-decoration: none;">Programmes</a>
+            <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="#284a62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <ul class="dropdown-menu">
+              <li><a href="https://iimbx.iimb.ac.in/hospital-management-program/">Hospital Management Program</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/ai-for-managers/">AI for Managers Programme</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/airlines-management-programme/">Airlines Management Programme</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/faculty-development-program/">Faculty Development Programme</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/fintech/">FinTech Certificate Programme for Young Professionals</a></li>
+            </ul>
+          </div>
+          
+          <a href="https://iimbx.iimb.ac.in/catalog/" class="nav-item active">Catalog</a>
+          
+          <div class="nav-item has-dropdown dropdown-center">
+            <a href="https://iimbx.iimb.ac.in/careers/" class="dropdown-trigger" style="color: inherit; text-decoration: none;">Career</a>
+            <svg class="dropdown-icon" width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="#284a62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <ul class="dropdown-menu">
+              <li><a href="https://iimbx.iimb.ac.in/careers/">Job Openings</a></li>
+              <li><a href="https://iimbx.iimb.ac.in/internship/">Internship</a></li>
+            </ul>
+          </div>
+          
+          <a href="https://iimbx.iimb.ac.in/contact/" class="nav-item">Contact Us</a>
+        </nav>
+
+        <!-- Hamburger Menu Button (Mobile) -->
+        <button class="hamburger-btn" aria-label="Toggle menu">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-mid"></span>
+          <span class="bar bar-bot"></span>
+        </button>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <!-- Animated Background Icons -->
+          <div class="hero-bg-icons">
+            <div class="bg-icon bg-icon-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><line x1="8" y1="10" x2="8" y2="10.01"></line><line x1="12" y1="10" x2="12" y2="10.01"></line><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="8" y1="14" x2="8" y2="14.01"></line><line x1="12" y1="14" x2="12" y2="14.01"></line><line x1="8" y1="18" x2="8" y2="18.01"></line><line x1="12" y1="18" x2="12" y2="18.01"></line></svg>
+            </div>
+            <div class="bg-icon bg-icon-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+            </div>
+          </div>
+
+          <div class="container reveal-on-scroll">
+            <h1 class="hero-title">
+              <span class="title-small">Accounting for</span>
+              <span class="title-huge">Decision Making</span>
+            </h1>
+            
+            <div class="hero-pills">
+              <div class="hero-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span class="pill-label">Duration:</span> 9 Weeks
+              </div>
+              <div class="hero-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span class="pill-label">Commitment:</span> 3-4 hrs / week
+              </div>
+              <div class="hero-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+                <span class="pill-label">Level:</span> Entry-level Managers
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="course-content-section" id="syllabus">
+          
+          <div class="course-icon-bridge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+
+          <div class="overview-glass-box reveal-on-scroll">
+            <h2 class="matte-green-style">Course Overview</h2>
+            <p>
+              In any given organisation, the information generated by accounting systems is of paramount importance to both internal and external stakeholders. Hence, a strong understanding of accounting information is vital to personnel in managerial positions for them to be able to effectively perform their role. Having a good understanding of accounting concepts enables managers to communicate effectively with the finance department, bankers, suppliers, tax authorities, and other stakeholders. It also helps them make wise and informed decisions.
+            </p>
+            <p>
+              The IIMBx MOOC on <a href="https://www.youtube.com/watch?v=xS3q6ggTkHY" target="_blank" rel="noopener noreferrer" style="color: #587A66; font-weight: 500; text-decoration: none;">Accounting for Decision Making</a> is designed for graduates, entry-level managers, and personnel already serving in managerial positions to provide them with the necessary foundational knowledge in Accounting as their roles might demand.
+            </p>
+            <p>
+              In this IIMBx <a href="https://iimbx.iimb.ac.in/platforms/mooc-on-mooc/" target="_blank" rel="noopener noreferrer" style="color: #587A66; font-weight: 500; text-decoration: none;">MOOC</a>, you will familiarise yourself with the relevant terms and concepts, learn to read and understand financial statements as well as develop the capability to analyse business performance through financial statements. You will be able to observe how the performance of any organisation is impacted by four fundamental drivers of profitability: Asset Management, Cost Management, Leverage Management, and Tax Management.
+            </p>
+            <p>
+              The second part of the MOOC will cover main concepts related to managing costs such as product costing, budgeting, budgetary control, and cost analysis for decision making.
+            </p>
+            <p>
+              Successfully completing this course will transform you into a confident manager can ably discuss and handle accounting and financial matters in the workplace. For the ones already holding managerial positions, this course can help to move forward in their managerial career and take on senior roles.
+            </p>
+          </div>
+
+          <div class="course-main">
+              <!-- What You Will Learn -->
+              <div class="split-section reveal-on-scroll">
+                <!-- 20% Title Left -->
+                <div class="split-title-card matte-red-style">
+                  <h2>Learning<br>Outcomes</h2>
+                </div>
+                <!-- 80% Content Right -->
+                <div class="split-content-card matte-red-style">
+                  <ul class="check-list">
+                    <li>Read and explain the contents of financial statements</li>
+                    <li>Analyse the financial statements</li>
+                    <li>Prepare operational and financial budgets</li>
+                    <li>Apply accounting information to plan and control your business and make decisions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Target Audience (Zig Zag) -->
+              <div class="split-section reveal-on-scroll">
+                <!-- 80% Content Left -->
+                <div class="split-content-card matte-blue-style">
+                  <p>Executives, students pursuing post-graduate degrees, and professionals who are aspiring to develop their skills in the field of managerial accounting.</p>
+                </div>
+                <!-- 20% Title Right -->
+                <div class="split-title-card matte-blue-style">
+                  <h2>Target<br>Audience</h2>
+                </div>
+              </div>
+
+              <!-- Syllabus Accordion -->
+              <div id="syllabus" class="overview-glass-box syllabus-section">
+                <h2 class="matte-green-style">Course Syllabus</h2>
+                <div class="accordion">
+                  <!-- Week 1 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 1</span>
+                      <span class="week-title">Mechanics of Financial Accounting</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Fundamental Accounting Terms</li>
+                          <li>Recording Accounting Transactions</li>
+                          <li>Financial Statements</li>
+                          <li>Financial Accounting Regulations</li>
+                          <li>Annual Report</li>
+                          <li>Uses of Financial Statements</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 2 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 2</span>
+                      <span class="week-title">Reading Financial Statements</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Balance Sheet – Shareholders Fund</li>
+                          <li>Balance Sheet – Liabilities</li>
+                          <li>Balance Sheet – Assets</li>
+                          <li>Income Statement – Revenue</li>
+                          <li>Expenses and Profit</li>
+                          <li>Cash Flow Statement</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 3 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 3</span>
+                      <span class="week-title">Financial Statement Analysis</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Assessing Financial Health</li>
+                          <li>Asset Management</li>
+                          <li>Cost Management</li>
+                          <li>Leverage Management</li>
+                          <li>Risk Management</li>
+                          <li>Benchmarking</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 4 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 4</span>
+                      <span class="week-title">Product Costing</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Methods of Product Costing</li>
+                          <li>Job Costing</li>
+                          <li>Customer Costing</li>
+                          <li>Process Costing</li>
+                          <li>Indirect Cost and Allocation</li>
+                          <li>Misallocation of Indirect Cost</li>
+                          <li>Activity Based Costing</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 5 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 5</span>
+                      <span class="week-title">Cost Analysis for Decision Making</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Absorption vs. Marginal Costing</li>
+                          <li>Behavior of Costs</li>
+                          <li>Break-even Analysis</li>
+                          <li>BEP in Multiproduct Environment</li>
+                          <li>Pricing Decision</li>
+                          <li>Make or Buy decision</li>
+                          <li>Discontinuing product or closing down divisions</li>
+                          <li>Optimal Product Mix</li>
+                          <li>Operating Leverage</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 6 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 6</span>
+                      <span class="week-title">Budgeting and Variance Analysis</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Strategic Planning and Budgets</li>
+                          <li>Budgeting Process</li>
+                          <li>Preparation of Master Budget</li>
+                          <li>Setting Standards</li>
+                          <li>Variance Analysis: General Framework</li>
+                          <li>Fixed & Variable Overhead Variance</li>
+                          <li>Material Mix Variance</li>
+                          <li>Sales and Sales Mix Variance</li>
+                          <li>Investigating Variance</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 7 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 7</span>
+                      <span class="week-title">Financial Markets</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Introduction</li>
+                          <li>Financial System</li>
+                          <li>Institutional Financing</li>
+                          <li>Direct Capital Flow</li>
+                          <li>Financial Instruments</li>
+                          <li>Role of Finance Function</li>
+                          <li>Key Issues in Finance Function</li>
+                          <li>Organization Structure of Finance Function</li>
+                          <li>Financial Goal and Agency Cost</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 8 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 8</span>
+                      <span class="week-title">Capital Budgeting</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Time Value of Money</li>
+                          <li>Capital Budgeting Techniques</li>
+                          <li>Estimation of Project Cash Flows</li>
+                          <li>Capital Structure and Cost of Capital</li>
+                          <li>Case Study</li>
+                          <li>Special Issues in Capital Budgeting</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Week 9 -->
+                  <div class="accordion-item reveal-on-scroll">
+                    <button class="accordion-trigger">
+                      <span class="week-num">Week 9</span>
+                      <span class="week-title">Working Capital Management</span>
+                      <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    </button>
+                    <div class="accordion-content">
+                      <div class="accordion-inner">
+                        <ul class="week-details-list">
+                          <li>Short-term Financial Planning</li>
+                          <li>Working Capital Cycle</li>
+                          <li>Financing of Working Capital</li>
+                          <li>Inventory Management</li>
+                          <li>Receivables Management</li>
+                          <li>Cash Management</li>
+                          <li>Managing Payables</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 50-50 Split Cards -->
+              <div class="split-section reveal-on-scroll">
+                <!-- 50% Left (Instructor) -->
+                <div class="split-content-card instructor-card">
+                  <div class="instructor-profile">
+                    <h3>Course Instructor</h3>
+                    <div class="instructor-image-container">
+                      <img src="./Narasimhan-1.png" alt="Prof. M S Narasimhan" class="instructor-image" />
+                    </div>
+                    <h4 class="instructor-name">Prof. M S Narasimhan</h4>
+                    <p class="instructor-title">Finance and Accounting</p>
+                    <p class="instructor-institution">Indian Institute of Management Bangalore (IIMB)</p>
+                  </div>
+                </div>
+                <!-- 50% Right (Promo Video) -->
+                <div class="split-content-card instructor-card-right">
+                  <div class="video-wrapper">
+                    <h3>Course Introduction</h3>
+                    <div class="video-container">
+                      <iframe 
+                        src="https://www.youtube.com/embed/xS3q6ggTkHY?rel=0&modestbranding=1" 
+                        title="IIMBx Course Preview" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+      </main>
+
+      <!-- Footer Section -->
+      <div class="iimbx-footer-wrapper">
+        <footer class="footer">
+          <div class="container">
+            <!-- Top Grid -->
+            <div class="footer-grid">
+              <!-- Brand Column -->
+              <div class="footer-brand">
+                <div style="display: inline-flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                  <img src="./logo-animated-new.gif" alt="IIMBx Logo" style="height: 40px; filter: brightness(0) invert(1);" />
+                </div>
+                <div class="footer-brand-tag">
+                  The same distinguished faculty teaching at <em>IIMB</em> teach you. Live, online, and on campus.
+                </div>
+                <div class="footer-brand-addr">
+                  IIMBx Digital Learning Foundation<br />
+                  Indian Institute of Management Bangalore<br />
+                  Bannerghatta Main Rd, Bilekahalli<br />
+                  Bengaluru, Karnataka 560076<br />
+                  info@iimbx.iimb.ac.in
+                </div>
+              </div>
+              
+              <!-- Links Column 1 -->
+              <div class="footer-col">
+                <div class="footer-col-title">Programmes</div>
+                <ul>
+                  <li><a href="https://iimbx.iimb.ac.in/hospital-management-program/">Hospital Management Programme</a></li>
+                  <li><a href="https://iimbx.iimb.ac.in/ai-for-managers/">Artificial Intelligence For Managers Programme</a></li>
+                  <li><a href="https://iimbx.iimb.ac.in/faculty-development-program/">Faculty Development Programme</a></li>
+                  <li><a href="https://iimbx.iimb.ac.in/airlines-management-programme/">Airlines Management Programme</a></li>
+                  <li><a href="https://iimbx.iimb.ac.in/fintech/">FinTech Certificate Programme for Young Professionals</a></li>
+                </ul>
+              </div>
+              
+              <!-- Links Column 2 -->
+              <div class="footer-col">
+                <div class="footer-col-title">Microprogrammes</div>
+                <ul>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">From Numbers to Decisions</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Marketing 360: Marketing Fundamentals to Digital Practice</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">New Manager Foundations</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Customer Value in the Digital & Platform Economy</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Venture Building Essentials</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Strategy for Competitive Advantage</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Work, Career & Self-Leadership</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Business Acumen for Operations Leaders</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">The Economics of Business Decisions</a></li>
+                </ul>
+              </div>
+
+              <!-- Links Column 3 -->
+              <div class="footer-col">
+                <div class="footer-col-title">Connect</div>
+                <ul>
+                  <li><a href="https://iimbx.iimb.ac.in/team/">Faculty</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">Stories</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">LinkedIn</a></li>
+                  <li><a href="javascript:void(0)" style="cursor: default; pointer-events: none;">YouTube</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+              <div>IIMBx © 2026 · IIMBx Digital Learning Foundation</div>
+              <div class="footer-bottom-x">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
